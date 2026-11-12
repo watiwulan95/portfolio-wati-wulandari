@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wati Wulandari — UI Developer & Frontend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              900: '#134e4a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="text-lg font-extrabold tracking-tight text-brand-700">
+        WATI<span class="text-slate-900"> WULANDARI</span>
+      </a>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+        <a href="#tentang" class="hover:text-brand-600 transition">Tentang</a>
+        <a href="#proyek-unggulan" class="hover:text-brand-600 transition">Proyek Unggulan</a>
+        <a href="#arsip-proyek" class="hover:text-brand-600 transition">Riwayat 16 Proyek</a>
+        <a href="#keahlian" class="hover:text-brand-600 transition">Keahlian</a>
+      </nav>
+      <a href="#kontak" class="px-4 py-2 rounded-lg bg-brand-700 text-white text-xs sm:text-sm font-semibold hover:bg-brand-600 transition shadow-sm">
+        Hubungi Saya
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="tentang" class="pt-16 pb-20 bg-gradient-to-b from-brand-50/70 to-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1 text-center md:text-left">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold mb-4">
+            <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+              Available for Remote / WFH Opportunities / Full Time
+            </span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+            Wati Wulandari
+          </h1>
+          <h2 class="text-lg sm:text-xl font-semibold text-brand-700 mb-5">
+            UI Developer  •  Frontend Developer  •  UI/UX Designer
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mb-8">
+            UI/Frontend Developer berpengalaman lebih dari <strong>5 tahun</strong> dengan rekam jejak menangani <strong>16+ proyek skala enterprise</strong> di sektor otomotif, asuransi, pembiayaan, dan HRIS. Spesialis mentransformasikan desain Figma menjadi kode antarmuka <em>pixel-perfect</em> dan responsif untuk Web, Tablet, serta Mobile menggunakan <strong>Next.js, React, Angular, Ionic, OutSystems, dan Tailwind CSS</strong>, dilengkapi pemahaman dasar arsitektur Full-Stack (NestJS, Prisma, PostgreSQL).
+          </p>
+          <div class="flex flex-wrap justify-center md:justify-start gap-3">
+            <a href="#proyek-unggulan" class="px-6 py-3 rounded-xl bg-brand-700 text-white text-sm font-semibold hover:bg-brand-600 transition shadow-md">
+              Lihat Proyek Unggulan
+            </a>
+            <a href="https://linkedin.com/in/wati-wulandari" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-white border border-slate-300 text-slate-700 text-sm font-semibold hover:border-brand-600 hover:text-brand-700 transition">
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Photo Card Placeholder -->
+        <div class="w-56 sm:w-64 shrink-0">
+          <div class="aspect-square rounded-2xl bg-white p-2 shadow-xl border border-brand-100">
+            <!-- Ganti src di bawah dengan file foto Anda, misalnya src="foto_profil_wati.jpg" -->
+            <div class="w-full h-full rounded-xl bg-brand-50 flex flex-col items-center justify-center text-center p-4 border-2 border-dashed border-brand-500/40">
+              <!-- <span class="text-3xl mb-2">👩‍💻</span>
+              <p class="text-xs font-bold text-brand-700">Foto Profil</p> -->
+              <img src="foto-wati.jpg" alt="Wati Wulandari" class="w-full h-full object-cover rounded-xl" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14">
+        <div class="bg-white p-5 rounded-xl border border-slate-200/80 shadow-sm">
+          <p class="text-2xl font-extrabold text-brand-700">5+ Tahun</p>
+          <p class="text-xs font-medium text-slate-500 mt-1">Pengalaman UI/Frontend</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200/80 shadow-sm">
+          <p class="text-2xl font-extrabold text-brand-700">16+ Proyek</p>
+          <p class="text-xs font-medium text-slate-500 mt-1">Enterprise & Corporate</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200/80 shadow-sm">
+          <p class="text-2xl font-extrabold text-brand-700">Multi-Device</p>
+          <p class="text-xs font-medium text-slate-500 mt-1">Web, Tablet & Mobile UI</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200/80 shadow-sm">
+          <p class="text-2xl font-extrabold text-brand-700">Figma → Code</p>
+          <p class="text-xs font-medium text-slate-500 mt-1">Pixel-Perfect Slicing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="proyek-unggulan" class="py-16 bg-white border-t border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Case Studies</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Proyek Unggulan</h2>
+        <p class="text-sm text-slate-600 mt-2">Sorotan proyek utama yang mencakup perancangan UI/UX, multi-platform slicing, hingga integrasi full-stack.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-slate-50/40 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-brand-100 text-brand-700">Agustus 2026</span>
+              <span class="text-xs font-medium text-slate-500">Web Application</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">DWP HR App — Sistem Manajemen SDM</h3>
+            <p class="text-xs font-semibold text-brand-700 mb-3">UI/UX Designer & Full-Stack Developer</p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Merancang wireflow dan desain antarmuka menyeluruh di Figma, mengimplementasikan kode frontend modular dengan Next.js & Tailwind CSS, serta membangun arsitektur backend dasar (REST API) untuk absensi, klaim, dan approval engine.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-200/70">
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Figma</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Next.js</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Tailwind CSS</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">NestJS</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Prisma & PostgreSQL</span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-slate-50/40 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-blue-100 text-blue-700">Sep – Nov 2024</span>
+              <span class="text-xs font-medium text-slate-500">Web • Tablet • Mobile</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Chubb e-Smart & Taspen</h3>
+            <p class="text-xs font-semibold text-brand-700 mb-3">UI Developer (Financial & Insurance)</p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Mengembangkan antarmuka digital untuk layanan asuransi dan pengelolaan dana pensiun dengan standar aksesibilitas korporat, menjaga konsistensi tampilan lintas perangkat desktop, tablet, dan mobile.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-200/70">
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">OutSystems</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Responsive UI</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">HTML5 / CSS3</span>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-slate-50/40 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-amber-100 text-amber-800">2021 – 2024</span>
+              <span class="text-xs font-medium text-slate-500">Web • Tablet • Mobile</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Ekosistem Otomotif: Hyundai & TAM</h3>
+            <p class="text-xs font-semibold text-brand-700 mb-3">UI Developer (Hyundai Phase 2, TMI TAPPS, Funnel TAM)</p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Mentransformasikan desain menjadi antarmuka aplikasi operasional dealer, sales funnel, dan layanan pelanggan otomotif yang dioptimalkan khusus untuk mobilitas tim lapangan di perangkat tablet dan ponsel.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-200/70">
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Ionic</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Angular</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Bootstrap</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">OutSystems</span>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition bg-slate-50/40 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-purple-100 text-purple-700">2023 – 2025</span>
+              <span class="text-xs font-medium text-slate-500">Web • Tablet • Mobile</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Moxa Konven, Moladin & DCSS (Phase 1–2)</h3>
+            <p class="text-xs font-semibold text-brand-700 mb-3">UI Developer (Fintech & Enterprise Ops)</p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              Membangun antarmuka formulir pengajuan pembiayaan multifinance, dashboard transaksi, serta pembaruan komponen UI berkelanjutan lintas fase untuk memastikan alur input data cepat dan intuitif.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-200/70">
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Mobile UI</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Cross-Device</span>
+            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Component Design</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Project Archive with Filter -->
+  <section id="arsip-proyek" class="py-16 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Track Record</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Daftar Lengkap 16 Proyek</h2>
+        </div>
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2" id="filter-buttons">
+          <button onclick="filterProjects('all')" class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-brand-700 text-white transition">Semua (16)</button>
+          <button onclick="filterProjects('multi')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-600 hover:border-brand-600 transition">Multi-Platform</button>
+          <button onclick="filterProjects('mobile')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-600 hover:border-brand-600 transition">Mobile / Tablet</button>
+          <button onclick="filterProjects('web')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-600 hover:border-brand-600 transition">Web</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-100/80 border-b border-slate-200 text-xs font-bold text-slate-600 uppercase">
+                <th class="py-3.5 px-4 w-12">No</th>
+                <th class="py-3.5 px-4">Nama Proyek</th>
+                <th class="py-3.5 px-4">Platform</th>
+                <th class="py-3.5 px-4">Peran</th>
+                <th class="py-3.5 px-4">Periode</th>
+              </tr>
+            </thead>
+            <tbody id="project-table-body" class="divide-y divide-slate-200 text-sm">
+              <!-- Rows populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Education -->
+  <section id="keahlian" class="py-16 bg-white border-t border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Tech Stack</span>
+          <h2 class="text-2xl font-extrabold text-slate-900 mt-1 mb-6">Keahlian Utama & Pendukung</h2>
+          
+          <div class="space-y-5">
+            <div>
+              <h3 class="text-xs font-bold uppercase text-slate-500 mb-2.5">Frontend & Mobile UI Development</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg bg-brand-50 text-brand-700 border border-brand-200 text-xs font-semibold">Next.js</span>
+                <span class="px-3 py-1.5 rounded-lg bg-brand-50 text-brand-700 border border-brand-200 text-xs font-semibold">React JS</span>
+                <span class="px-3 py-1.5 rounded-lg bg-brand-50 text-brand-700 border border-brand-200 text-xs font-semibold">Tailwind CSS</span>
+                <span class="px-3 py-1.5 rounded-lg bg-brand-50 text-brand-700 border border-brand-200 text-xs font-semibold">Angular</span>
+                <span class="px-3 py-1.5 rounded-lg bg-brand-50 text-brand-700 border border-brand-200 text-xs font-semibold">Ionic</span>
+                <span class="px-3 py-1.5 rounded-lg bg-brand-50 text-brand-700 border border-brand-200 text-xs font-semibold">OutSystems</span>
+                <span class="px-3 py-1.5 rounded-lg bg-brand-50 text-brand-700 border border-brand-200 text-xs font-semibold">Bootstrap</span>
+                <span class="px-3 py-1.5 rounded-lg bg-brand-50 text-brand-700 border border-brand-200 text-xs font-semibold">HTML5 / CSS3</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xs font-bold uppercase text-slate-500 mb-2.5">UI/UX & Visual Design</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs font-semibold">Figma (Wireframing & Prototyping)</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs font-semibold">Canva</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs font-semibold">Adobe Photoshop</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs font-semibold">Responsive Web Design</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xs font-bold uppercase text-slate-500 mb-2.5">Backend Exposure & Tools</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Node.js & NestJS (Dasar)</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">TypeScript</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Prisma ORM & PostgreSQL</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Supabase</span>
+                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">Git / GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Certificate -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <h3 class="text-base font-extrabold text-slate-900 mb-4">Pendidikan & Sertifikasi</h3>
+          <div class="space-y-4">
+            <div class="pb-4 border-b border-slate-200">
+              <span class="text-xs font-bold text-brand-700">2013 — 2018</span>
+              <h4 class="text-sm font-bold text-slate-900 mt-0.5">S1 Sistem Informasi</h4>
+              <p class="text-xs text-slate-600 mt-0.5">Universitas Katolik Soegijapranata Semarang</p>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-brand-700">6 Oktober 2022</span>
+              <h4 class="text-sm font-bold text-slate-900 mt-0.5">Responsive Web Design Certification</h4>
+              <p class="text-xs text-slate-600 mt-0.5">FreeCodeCamp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="kontak" class="bg-slate-900 text-white py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-extrabold mb-2">Tertarik Bekerja Sama?</h2>
+      <p class="text-slate-400 text-sm max-w-lg mx-auto mb-6">
+        Siap bergabung untuk posisi Remote / WFH maupun proyek kolaborasi UI/Frontend Development mulai Desember 2026.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 text-sm font-medium mb-8">
+        <a href="mailto:watiwulan1395@gmail.com" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 transition">
+          watiwulan1395@gmail.com
+        </a>
+        <a href="https://wa.me/6285712351159" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+          0857-1235-1159
+        </a>
+        <a href="https://linkedin.com/in/wati-wulandari" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+          🔗 LinkedIn
+        </a>
+      </div>
+      <p class="text-xs text-slate-500">© 2026 Wati Wulandari • Semarang, Jawa Tengah</p>
+    </div>
+  </footer>
+
+  <script>
+    const projects = [
+      { no: 1, name: "DWP HR App", platform: "Web", category: "web", role: "Full-Stack & UI/UX Designer (Figma)", date: "Agustus 2026" },
+      { no: 2, name: "DCSS Phase 2", platform: "Web, Tablet, Mobile", category: "multi", role: "UI Developer", date: "Agustus 2025" },
+      { no: 3, name: "PML", platform: "Web, Tablet, Mobile", category: "multi", role: "UI Developer", date: "Maret 2025" },
+      { no: 4, name: "Moxa Konven", platform: "Web, Tablet, Mobile", category: "multi", role: "UI Developer", date: "Februari 2025" },
+      { no: 5, name: "Chubb e-Smart", platform: "Web, Tablet, Mobile", category: "multi", role: "UI Developer", date: "November 2024" },
+      { no: 6, name: "Taspen", platform: "Web, Tablet, Mobile", category: "multi", role: "UI Developer", date: "September 2024" },
+      { no: 7, name: "Hyundai Phase 2", platform: "Web, Tablet, Mobile", category: "multi", role: "UI Developer", date: "Agustus 2024" },
+      { no: 8, name: "DCSS (Phase 1)", platform: "Web, Tablet, Mobile", category: "multi", role: "UI Developer", date: "April 2024" },
+      { no: 9, name: "Moladin", platform: "Mobile", category: "mobile", role: "UI Developer", date: "Juli 2023" },
+      { no: 10, name: "TMI TAPPS Phase 2", platform: "Mobile", category: "mobile", role: "UI Developer", date: "Juli 2023" },
+      { no: 11, name: "TMI TAPPS Phase 1", platform: "Mobile", category: "mobile", role: "UI Developer", date: "Maret 2023" },
+      { no: 12, name: "Mitsui GA-Form", platform: "Web", category: "web", role: "UI Developer", date: "November 2022" },
+      { no: 13, name: "Mitsui Mimo", platform: "Mobile", category: "mobile", role: "UI Developer", date: "Juli 2022" },
+      { no: 14, name: "LMS (Learning Management System)", platform: "Mobile", category: "mobile", role: "UI Developer", date: "April 2022" },
+      { no: 15, name: "Funnel TAM", platform: "Mobile & Web", category: "multi", role: "UI Developer", date: "Des 2021 – 2022" },
+      { no: 16, name: "TAM Microservices", platform: "Tablet", category: "mobile", role: "UI Developer", date: "Okt 2021 – 2022" },
+    ];
+
+    function renderTable(filter = 'all') {
+      const tbody = document.getElementById('project-table-body');
+      const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+      tbody.innerHTML = filtered.map((p, idx) => `
+        <tr class="hover:bg-slate-50 transition">
+          <td class="py-3 px-4 text-slate-500 font-medium">${idx + 1}</td>
+          <td class="py-3 px-4 font-bold text-slate-900">${p.name}</td>
+          <td class="py-3 px-4">
+            <span class="inline-block px-2.5 py-0.5 rounded-md text-xs font-medium bg-brand-50 text-brand-700 border border-brand-100">
+              ${p.platform}
+            </span>
+          </td>
+          <td class="py-3 px-4 text-slate-600">${p.role}</td>
+          <td class="py-3 px-4 text-slate-500 whitespace-nowrap">${p.date}</td>
+        </tr>
+      `).join('');
+    }
+
+    function filterProjects(category) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-700', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+      });
+      event.target.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+      event.target.classList.add('bg-brand-700', 'text-white');
+      renderTable(category);
+    }
+
+    renderTable();
+  </script>
+</body>
+</html>
